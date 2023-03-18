@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+
+
+
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+p {
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+
+
+}
+h1,
+h2 {
+    letter-spacing: 3px;
+    
+
+
+}
+/*   Start Style Container*/
+
+.container {
+    font-size: 18px;
+    color: #444749;
+
+
+}
+.container p {
+    color: #d0d1d1;
+}
+/*   Start Style Header-Page*/
+
+.header-page {
+    background-image: url("/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:110% 50%;
+   
+
+
+}
+.header-page .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+.block svg {
+    margin: 50px 0;
+}
+
+
+.block p{
+    width: 45%;
+
+
+}/* This code is styling two element  '.block .btn' element and '.clipboard .btn' element */
+.block .header-page-btn,
+.clipboard .clipboard-btn {
+    display: flex;    
+}
+.block .btn,
+.clipboard .btn {
+    margin: 5px;
+    padding: 13px;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 180px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.block .btn1,
+.clipboard .btn1 {
+    background-color: #26bba4;
+    
+
+}
+.block .btn2,
+.clipboard .btn2 {
+    background-color: #5D74F8ff;
+  
+}
+.btn:hover{
+    opacity: 0.7;
+}
+/* End Button*/
+
+/* START STYLE Feature */
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.feature p {
+    margin-top: 15px;
+    width: 90%;
+}
+.feature p:nth-of-type(1) {
+    width: 415px;
+}
+
+.feature .feature-description {
+    display: flex;
+    align-items: center;
+}
+.feature .feature-description img {
+    width: 700px;
+    height: 500px;
+}
+.feature .feature-description .text {
+    position: relative;
+    left: 125px;
+    width: 38%;
+}
+/* Start Style Clipboard */
+.plan-features {
+    margin-top: 100px;
+}
+.plan-features p{
+    width: 60%;
+}
+/* Start Style Workflow */
+
+.tools {
+    flex-direction: row;
+    text-align: center;
+}
+.tools .items {
+    width: 97%;
+    margin: 15px;
+}
+.cards {
+    flex-direction: row;
+    text-align: center;
+    margin: 25px;
+}
+.cards img {
+    margin: 50px;
+}
+/* Start Style Footer */
+
+footer{
+    background-color: #F5F6F8ff;
+}
+.footer-container{
+    margin: 50px 50px 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container .left-col {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+}
+.footer-container .icon-footer img {
+    width: 4rem;
+}
+.footer-container .list-footer{
+
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    cursor: pointer;
+}
+.footer-container .list-footer ul li:hover{
+    color: #26bba4;
+}
+.footer-container .list-footer ul li{
+    list-style: none;
+    margin-top: 15px;
+    transition: all .3s ease;
+}
+.footer-container .social-media a {
+    margin: 15px;
+}
+.social-media svg:hover {
+    fill: #26bba4;
+  }
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+
+@media  screen and (max-width : 768px)   {
+        
+    .header-page {
+        background-image: url("/images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size:120% 50%;
+    
+
+
+    }
+    h1, h2 {
+        width: 350px;
+        text-align: center;
+        letter-spacing: 0;
+    }p {
+        letter-spacing: 0px;
+
+    }
+    .block .btn, .clipboard .btn {
+        width: 300px;
+    }
+    .block{
+        
+        padding: 15px;
+    
+    }
+    .block p {
+        width: 100%;
+        margin-top: 35px;
+    }
+    .block .header-page-btn,
+    .clipboard .clipboard-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature .feature-description {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature .feature-description img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .feature .feature-description .text {
+        width: 100%;
+        margin-top: 35px;
+        left: 0;
+    }
+    .feature .feature-description h3 {
+        
+            text-align: center;
+        
+    
+    }
+    .feature p {
+        width: 100%;
+    }
+    .clipboard  p {
+        width: 40%;
+    }
+    .clipboard img {
+        width: 350px;
+    }
+    .tools {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cards {
+        flex-direction: column;
+        text-align: center;
+        margin: 25px;
+    }
+    .footer-container {
+    
+        flex-direction: column;
+        align-items: normal;
+
+        
+    }
+    .footer-container .left-col {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-container .list-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container .list-footer ul li {
+        padding: 15px;
+        text-align: center;
+    }
+    .footer-container .social-media {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .attribution {
+        margin-bottom:25px ;
+    }
+        
+    
+}
