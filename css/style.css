@@ -43,7 +43,7 @@ h2 {
 /*   Start Style Header-Page*/
 
 .header-page {
-    background-image: url("/images/bg-header-desktop.png");
+    background-image: url("../images/bg-header-desktop.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size:110% 50%;
@@ -206,7 +206,7 @@ footer{
 @media  screen and (max-width : 768px)   {
         
     .header-page {
-        background-image: url("/images/bg-header-mobile.png");
+        background-image: url("../images/bg-header-mobile.png");
         background-repeat: no-repeat;
         background-position: top;
         background-size:120% 50%;
